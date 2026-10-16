@@ -1,0 +1,15 @@
+# Plugin-Data.yaml
+
+name: Hermes Agent
+description: Personal AI agent
+version: 0.1.0
+author: Nous Research
+license: MIT
+platforms:
+  - linux
+  - macos
+  - windows
+metadata:
+  hermes:
+    tags: [agent, cli, automation]
+    related_skills: [github, obsidian]

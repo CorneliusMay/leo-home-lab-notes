@@ -1,0 +1,36 @@
+# .gitignore
+
+Root ignore for the leo-home-lab-notes repo. Everything lives under
+~/home-lab/ — nothing here contains secrets, but we keep some noise out.
+
+# Built / generated artifacts
+*.pyc
+__pycache__/
+*.egg-info/
+.build/
+.dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Editor / OS artefacts
+.DS_Store
+.DS_Store?
+*.swp
+*~
+.*.swp
+
+# Local config (contains no secrets here, but keep out)
+local.ini
+*.local
+
+# Obsidian cache (optional)
+.obsidian/
+*.md.cache
+
+# Scratch files a script may produce
+*.tmp
+*.temp

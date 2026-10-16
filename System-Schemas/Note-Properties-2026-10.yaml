@@ -1,0 +1,23 @@
+# YAML frontmatter schema for HomeLab Obsidian notes.
+fields:
+  date:
+    type: string
+    format: YYYY-MM-DD
+    required: false
+    description: Note date
+  tags:
+    type: array
+    items:
+      type: string
+    required: false
+    description: Free-form tags
+  status:
+    type: array
+    items:
+      type: string
+    required: false
+    description: Lifecycle stage
+notes:
+  - order: "date first, tags second, status last"
+  - "status is one of: draft, in-progress, complete"
+  - "use status to drive a kanban board (see Obsidian-Weekly-Capture.md)"
